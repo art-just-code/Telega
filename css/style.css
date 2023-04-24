@@ -43,7 +43,7 @@ a:hover {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background: url("/img/road.jpg") center no-repeat;
+  background: url("/logistics/img/road.jpg") center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }

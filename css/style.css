@@ -1,8 +1,4 @@
 /* Reset */
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
 
 *, *:before, *:after {
   padding: 0;
@@ -14,6 +10,7 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
 }
 
@@ -30,14 +27,63 @@ a:hover {
   color: inherit; 
 }
 
-/*Intro*/
-
 .container {
   width: 100%;
   margin: 0 auto;
 }
 
-.intro { 
+/*Header*/
+
+.header {
+  padding-top: 10px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header__inner { 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  max-width: 50px;
+}
+
+.header__contacts {
+  text-align: center;
+}
+
+.nav__link {
+  color: #000000;
+}
+
+/*Intro*/
+
+.intro__inner {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid #000000;
+  margin: 0;
+}
+
+.intro__title {
+  font-size: 40px;
+  max-width: 300px;
+}
+
+.main__logo {
+  display: flex;
+  max-width: 150px;
+}
+
+.intro__img { 
   display: flex; 
   flex-direction: column;
   justify-content: center;
@@ -46,36 +92,4 @@ a:hover {
   background: url("/img/road.jpg") center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-}
-
-.intro__inner { /*контейнер для слогана*/
-  width: 100%;
-  max-width: 620px;
-  margin: auto;
-  text-align: center;
-}
-
-.intro__title {
-  font-size: 40px;
-  font-weight: bold;
-}
-
-/*Header*/
-
-.header {
-  padding-top: 10px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
-
-/*.header__inner контейнер для лого и навигации*/ 
-
-.header__inner { 
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
 }

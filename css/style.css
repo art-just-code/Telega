@@ -154,7 +154,51 @@ a:hover {
 
 .services__img {
   display: flex;
-  width: 100%;
-  justify-content: space-evenly;
+  height: 100%;
+  justify-content: normal;
   padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.services__img img {
+  width: 100%;
+  height: 310px;
+  object-fit: none;
+}
+
+@media (max-width: 1134px) {
+  .services__img {
+    flex-direction: column;
+  }
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  background-color: #d9d9d9;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer__contacts {
+  text-align: center;
+}
+
+.footer__contacts span {
+  text-decoration: underline;
+}
+
+.messangers {
+  margin: 30px auto;
+}
+
+.messangers img {
+  margin: 0 20px;
+}
+
+.copyright {
+  color: #828282;
+  text-align: center;
+  margin: 1.5vh auto;
 }

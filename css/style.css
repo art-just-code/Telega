@@ -63,6 +63,7 @@ a:hover {
 
 .link {
   color: #000000;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
@@ -74,27 +75,30 @@ a:hover {
 /*Intro*/
 
 .intro__inner {
-  display: inline-flex;
+  display: grid;
   width: 100%;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  justify-content: space-evenly;
   border-top: 1px solid #000000;
   margin: 0;
 }
 
 .intro__inner p {
-  font-size: 18px;
+  font-size: 1em;
+  text-align: center;
 }
 
 .intro__title {
   font-size: calc(14px + 16 * (100vw / 1280));
   letter-spacing: 2px;
   max-width: 220px;
+  text-align: center;
 }
 
 .main__logo {
   display: flex;
   max-width: 150px;
+  justify-self: center;
 }
 
 @media (min-width: 600px){
@@ -199,6 +203,7 @@ footer {
 .messangers img {
   margin: 0 20px;
   min-width: 80px;
+  cursor: pointer;
 }
 
 .copyright {
